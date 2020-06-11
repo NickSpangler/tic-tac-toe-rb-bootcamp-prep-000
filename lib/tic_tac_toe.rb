@@ -110,5 +110,12 @@ def winner(board)
   end
 end
 
-
+def play
+  until over?(board)
+    turn(board)
+  end
+  if 
+end
+  
+  
     
