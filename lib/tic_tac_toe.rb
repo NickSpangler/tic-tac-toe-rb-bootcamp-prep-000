@@ -9,4 +9,10 @@ WIN_COMBINATIONS = [
   [2,4,6]
   ]
   
-  
+  def display_board(board)
+  puts " #{board[0]} | #{moves[1]} | #{moves[2]} "
+  puts "-----------"
+  puts " #{moves[3]} | #{moves[4]} | #{moves[5]} "
+  puts "-----------"
+  puts " #{moves[6]} | #{moves[7]} | #{moves[8]} "
+end
