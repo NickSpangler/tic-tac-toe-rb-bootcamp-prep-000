@@ -117,5 +117,4 @@ def play(board)
     elsif won?(board)
       puts "Congratulations #{board[won?(board).first]}!"
     end
-  end
 end
