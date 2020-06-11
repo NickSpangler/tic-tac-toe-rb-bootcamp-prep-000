@@ -39,5 +39,15 @@ def valid_move?(board, index)
   end
 end
 
-def turn
-  
+def turn(board)
+  puts "Please enter 1-9:"
+  input = gets.chomp
+  index = input_to_index(input)
+  if valid_move?(board,index) == true
+    move(board, index, token)
+    display_board(board)
+  else
+    turn(board)
+  end
+end
+
