@@ -21,7 +21,7 @@ def input_to_index(input)
   index = input.to_i - 1
 end
 
-def move(board, index, current_player(board))
+def move(board, index, token)
   board[index] = token
 end
 
@@ -44,7 +44,7 @@ def turn(board)
   input = gets.chomp
   index = input_to_index(input)
   if valid_move?(board,index) == true
-    move(board, index, current_player(board))
+    move(board, index, token)
     display_board(board)
   else
     turn(board)
