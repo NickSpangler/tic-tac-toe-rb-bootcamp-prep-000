@@ -113,11 +113,11 @@ end
 def play(board)
   until over?(board)
     turn(board)
-  end
-  if won?(board)
-    puts "Congratulations, #{board[win_combination[0]]}"
-  else
-    puts "The game is a draw!"
+    if won?(board)
+      puts "Congratulations, #{board[win_combination[0]]}"
+    else
+      puts "The game is a draw!"
+    end
   end
 end
   
